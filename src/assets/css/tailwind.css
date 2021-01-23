@@ -61,7 +61,7 @@
         @apply w-full resize-none py-0.5 px-2 h-24 mb-3 bg-gray-300 shadow-xl shadow-inner border border-gray-800
     }
     .main-nav {
-        @apply p-3 text-center w-full
+        @apply p-3 text-center w-full mb-2
     }
     .main-nav a {
         @apply inline-block text-gray-800 text-xl mx-4
@@ -71,6 +71,15 @@
     }
     a.router-link-active {
         @apply pb-0.5 border-b border-green-600
+    }
+    .filter-nav button {
+        @apply bg-transparent inline text-sm outline-none p-0 font-bold text-gray-500 rounded-none
+    }
+    .filter-nav span {
+        @apply mx-3
+    }
+    .filter-nav button.active {
+        @apply text-gray-700 border-b border-green-400
     }
 
 }
