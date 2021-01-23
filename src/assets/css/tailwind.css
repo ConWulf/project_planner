@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body, html {
+        background-color: rgba(200, 190, 200, 0.7);
+        @apply w-screen h-screen
+    }
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        max-width: 500px;
+        margin: 0 auto;
+        color: #2c3e50;
+
+    }
+}
+
+@layer components {
+    .project {
+        @apply p-2 bg-gray-300 my-2 border-l-4 border-red-400 rounded-md
+    }
+    .actions,
+    .details {
+       @apply p-2
+    }
+    .actions {
+        @apply font-bold flex justify-between items-center
+    }
+    .icons .material-icons {
+        @apply text-gray-500 text-2xl mx-1
+    }
+    .icons .material-icons:hover {
+        @apply text-gray-800 cursor-pointer
+    }
+    .complete {
+        @apply border-green-400
+    }
+
+    .project.complete .check {
+        @apply text-green-700
+    }
+    .project.complete .check:hover {
+        @apply text-green-500
+    }
+    form {
+        @apply bg-gray-300 p-3 rounded-md mt-5
+    }
+    input {
+        @apply px-1 pt-1 bg-gray-300 border-b border-gray-900 w-full mb-2
+    }
+    label {
+        @apply block text-gray-800 my-2
+    }
+    button {
+        @apply block bg-green-500 mx-auto p-2 rounded-md
+    }
+    textarea {
+        @apply w-full resize-none py-0.5 px-2 h-24 mb-3 bg-gray-300 shadow-xl shadow-inner border border-gray-800
+    }
+    .main-nav {
+        @apply p-3 text-center w-full
+    }
+    .main-nav a {
+        @apply inline-block text-gray-800 text-xl mx-4
+    }
+    .main-nav a:hover {
+       @apply text-blue-500
+    }
+    a.router-link-active {
+        @apply pb-0.5 border-b border-green-600
+    }
+
+}
