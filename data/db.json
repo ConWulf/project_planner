@@ -11,6 +11,12 @@
       "title": "Make Email",
       "details": "lorem ipsum",
       "complete": false
+    },
+    {
+      "title": "capstone project",
+      "details": "lorem ipsum",
+      "complete": false,
+      "id": 3
     }
   ]
 }
